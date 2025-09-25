@@ -26,10 +26,104 @@
 - Python 3.6+
 - 无外部依赖
 
-### 运行程序
+## 📖 详细使用方法
 
+### 第一步：安装Python（如果还没安装）
+
+#### Windows用户：
+1. 访问 [Python官网](https://www.python.org/downloads/)
+2. 下载Python 3.6或更高版本
+3. 安装时记得勾选"Add Python to PATH"
+
+#### Mac用户：
 ```bash
-python3 pipe_solver.py
+# 使用Homebrew安装（推荐）
+brew install python3
+
+# 或者从官网下载安装包
+```
+
+#### Linux用户：
+```bash
+# Ubuntu/Debian
+sudo apt-get install python3
+
+# CentOS/RHEL
+sudo yum install python3
+```
+
+### 第二步：下载项目文件
+
+#### 方法1：从GitHub下载压缩包（推荐新手）
+1. 访问项目的GitHub页面
+2. 点击绿色的 "Code" 按钮
+3. 选择 "Download ZIP"
+4. 下载完成后解压缩到任意文件夹
+5. 确保解压后的文件夹中包含 `pipe_solver.py` 文件
+
+#### 方法2：使用Git克隆（推荐有Git经验的用户）
+```bash
+# 在命令行中运行
+git clone git@github.com:kelvin715/PG-Assessment-Hacker.git
+cd PG-Assessment-Hacker
+```
+
+#### 方法3：直接下载单个文件
+如果你只需要核心文件：
+1. 在GitHub页面点击 `pipe_solver.py` 文件
+2. 点击 "Raw" 按钮
+3. 右键 → "另存为" 保存文件到本地文件夹
+
+**注意：** 无论使用哪种方法，请确保：
+- 所有文件都在同一个文件夹中
+- `pipe_solver.py` 文件完整下载
+- 文件夹路径中不要包含中文字符（避免编码问题）
+
+### 第三步：运行程序
+
+#### 方法1：在代码编辑器中运行
+**使用PyCharm：**
+1. 用PyCharm打开项目文件夹
+2. 右键点击 `pipe_solver.py` → "Run 'pipe_solver'"
+3. 或者点击文件右上角的绿色运行按钮
+
+**使用VSCode：**
+1. 用VSCode打开项目文件夹
+2. 打开 `pipe_solver.py` 文件
+3. 按 `Ctrl+F5` 或点击右上角的运行按钮
+
+#### 方法2：双击运行（仅限Python已正确配置的Windows）
+- 如果Python已正确安装并配置，可以直接双击 `pipe_solver.py` 文件
+- 注意：这种方法程序窗口可能会闪退，不推荐
+
+#### 方法3：命令行运行（推荐，适合所有用户）
+
+**Windows：**
+1. 按 `Win + R` 键，输入 `cmd` 并回车
+2. 使用 `cd` 命令进入项目文件夹
+3. 输入 `python pipe_solver.py` 或 `python3 pipe_solver.py`
+
+**Mac/Linux：**
+1. 打开终端（Terminal）
+2. 使用 `cd` 命令进入项目文件夹
+3. 输入 `python3 pipe_solver.py`
+
+
+### 第四步：开始使用
+
+程序启动后会显示菜单，按照提示操作即可：
+
+```
+==================================================
+管道推理题求解器
+==================================================
+支持的题型:
+  1. 单次变换 🤖
+  2. 两次变换(第1次固定) 🤖
+  ...
+
+请选择题型 (1-7):
+输入编号: 1
 ```
 
 ### 使用示例
@@ -85,6 +179,34 @@ PG-Assessment-Hacker/
 1. **自动模式**（题型1）：根据输入输出序列，自动枚举所有可能的变换
 2. **半自动模式**（题型2-6）：用户提供固定变换，程序推导可选变换
 3. **手动模式**（题型7）：双管道题目需要用户输入两次变换选项
+
+## ❓ 常见问题解答
+
+### Q: 程序显示"命令不识别"或"command not found"怎么办？
+**A:** 这说明Python没有正确安装或没有添加到系统PATH中：
+- Windows: 重新安装Python时勾选"Add Python to PATH"
+- 或者尝试使用 `py` 命令代替 `python`
+
+### Q: 双击.py文件没有反应怎么办？
+**A:** 
+1. 确保已安装Python
+2. 右键点击文件 → "打开方式" → 选择Python
+3. 推荐使用命令行方式运行
+
+### Q: 如何进入项目文件夹？
+**A:** 使用 `cd` 命令：
+```bash
+# 例如文件在桌面的PG-Assessment-Hacker文件夹
+cd Desktop/PG-Assessment-Hacker
+
+# Windows可能需要先切换盘符
+C:
+cd Desktop\PG-Assessment-Hacker
+```
+
+### Q: 程序运行中断怎么办？
+**A:** 按 `Ctrl + C` 可以安全退出程序，然后重新运行即可
+
 
 ## 📄 许可证
 

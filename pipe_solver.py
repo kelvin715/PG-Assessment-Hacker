@@ -2,11 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import itertools
-from typing import List, Dict, Tuple, Any, Optional
+from typing import List, Tuple, Optional
 
 class VisualReasoningSolver:
     def __init__(self):
-        # 形状映射
         self.shapes = {
             '1': '●',  # 圆形
             '2': '▲',  # 三角形
@@ -25,7 +24,6 @@ class VisualReasoningSolver:
             '7': '双管道'
         }
         
-        # 预生成所有可能的4位排列变换
         self.all_permutations = self._generate_all_permutations()
         
     def _generate_all_permutations(self) -> List[str]:
